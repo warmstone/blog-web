@@ -2,6 +2,7 @@
 <template>
   <div>
     <blog-header></blog-header>
+    <div class="header-img"></div>
   </div>
 </template>
 
@@ -13,5 +14,11 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.header-img {
+  height: 320px;
+  background-image: url('@/assets/img/peko.jpg');
+  background-size: cover;
+  background-position-y: -250px;
+  background-repeat: no-repeat;
+}
 </style>
