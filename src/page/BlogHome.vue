@@ -6,8 +6,8 @@
     <div class="blog-main">
       <blog-list></blog-list>
       <div class="side-info">
-        <blogger-info></blogger-info>
-        <last-article></last-article>
+        <div class="blogger-info"></div>
+        <div class="last-blog"></div>
       </div>
     </div>
   </div>
@@ -16,10 +16,8 @@
 <script>
 import BlogHeader from "@/components/BlogHeader";
 import BlogList from "@/components/BlogList";
-import BloggerInfo from "@/components/BloggerInfo";
-import LastArticle from "@/components/LastArticle";
 export default {
-  components: { BlogHeader, BlogList, BloggerInfo, LastArticle },
+  components: { BlogHeader, BlogList },
 };
 </script>
 
@@ -38,7 +36,18 @@ export default {
   display: flex;
 }
 .side-info {
-  padding: 10px;
-  padding-left: 0;
+  width: 270px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.blogger-info, .last-blog {
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  color: #303133;
+  height: 240px;
+  transition: .3s;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  margin-bottom: 3px;
 }
 </style>
